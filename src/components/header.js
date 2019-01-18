@@ -7,9 +7,7 @@ body{
 	margin: 0px 0px 0px 0px;
 }
 `
-const Logo = Styled.h1`
-  color: #FFA500;
-	font-size: 40px;
+const Logo = Styled.h1` color: #FFA500; font-size: 40px;
 	font-family: 'Anton';
 `
 const Wrapper = Styled.header`
@@ -35,5 +33,4 @@ class Header extends Component {
     )
   }
 }
-
 export default Header
