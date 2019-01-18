@@ -22,8 +22,8 @@ const Input = Styled.input`
 	margin: 25px 0px 75px 0px;
 `
 class Header extends Component {
-  inputChangeHandler(e) {
-    console.log(e.target.value)
+  inputChangeHandler(event) {
+    console.log(event.target.value)
   }
 
   render() {
