@@ -19,29 +19,17 @@ const Input = Styled.input`
 	margin: 20px 0;
 `
 class Header extends Component {
-<<<<<<< HEAD
   inputChangeHandler(event) {
     console.log(event.target.value)
-=======
-  inputChangeHandler(e) {
-    console.log(e.target.value)
->>>>>>> 22140e46e1f8d3268899d332acb51b3e8e7ab07f
   }
 
   render() {
     return (
-<<<<<<< HEAD
-      <header>
-        <div className="logo">Logo</div>
-        <input type="text" onChange={this.inputChangeHandler} />
-      </header>
-=======
       <Wrapper>
         <GlobalStyle />
         <Logo className="logo"> Logo</Logo>
         <Input type="text" onChange={this.inputChangeHandler} />
       </Wrapper>
->>>>>>> 22140e46e1f8d3268899d332acb51b3e8e7ab07f
     )
   }
 }
