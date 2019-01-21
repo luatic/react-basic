@@ -22,11 +22,17 @@ const Input = Styled.input`
 	margin: 25px 0px 75px 0px;
 `
 class Header extends Component {
-  inputChangeHandler(event) {
-    console.log(event.target.value)
+  state = {
+    keywords: 'hello',
   }
 
+  inputChangeHandler = e => {
+    this.setState({
+      keywords: e.target.value,
+    })
+  }
   render() {
+    console.log(this.state.keywords)
     return (
       <Wrapper>
         <GlobalStyle />
@@ -36,4 +42,5 @@ class Header extends Component {
     )
   }
 }
+
 export default Header
