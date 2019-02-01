@@ -24,12 +24,12 @@ class Header extends Component {
   state = {
     keywords: 'witaj',
   }
+
   inputChangeHandler = e => {
     this.setState({
       keywords: e.target.value,
     })
   }
-
   render() {
     console.log(this.state.keywords)
     return (
@@ -41,4 +41,5 @@ class Header extends Component {
     )
   }
 }
+
 export default Header
